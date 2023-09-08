@@ -36,6 +36,7 @@ const ShowCharacters = () => {
                     <p>{character.descripcion}</p> 
                     <p>{character.urlrepo}</p>
                     <p>{character.lenguaje}</p>
+                    <p>{character.imagen}</p>
                     <NavLink to={`/edit/${character.id}`}><button>editar</button></NavLink>
                     <DeleteCharacter id={character.id} onDelete={getAllCharacters} />
                 </div>

@@ -9,12 +9,13 @@ const [nombre, setNombre] = useState('')
 const [descripcion, setDescripcion] = useState('')
 const [urlrepo, setUrlrepo] = useState('')
 const [lenguaje, setLenguaje] = useState('')
+const [imagen, setImagen] = useState('')
 const navigate = useNavigate()
 
 const {id} = useParams()
 const update = async (e) => {
     e.preventDefault()
-    await axios.put(`${url}/${id}`, {nombre: nombre, descripcion: descripcion, urlrepo: urlrepo, lenguaje: lenguaje})
+    await axios.put(`${url}/${id}`, {nombre: nombre, descripcion: descripcion, urlrepo: urlrepo, lenguaje: lenguaje, imagen: imagen})
     navigate("/")
     
 }
@@ -25,6 +26,7 @@ useEffect(() => {
         setDescripcion(response.data.descripcion)
         setUrlrepo(response.data.urlrepo)
         setLenguaje(response.data.lenguaje)
+        setImagen(response.data.imagen)
         
     }
     getCharacterById()
@@ -51,6 +53,10 @@ useEffect(() => {
     <div>
         <label>Lenguaje</label>
         <input type="text" value={lenguaje} onChange={(e) => setLenguaje(e.target.value)}/>
+    </div>
+    <div>
+        <label>Imagen</label>
+        <input type="text" value={imagen} onChange={(e) => setImagen(e.target.value)}/>
     </div>
     
     <button type="submit">Modificar</button>
