@@ -1,34 +1,18 @@
 .contenedoredit {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 50vh; 
-    padding: 40px;
-    margin: 100px;
-    background-color: red;
-    border: 5px solid black;
-    border-radius: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 60vh;
+  margin: 100px;
+  padding: 40px;
+  background-color: red;
+  border: 5px solid black;
+  border-radius: 250px;
+  color: blue;
     }
-  button{
-       background-color: red;
-       color: white;
-       padding: 10px 20px;
-       border: solid 4px black;
-       border-radius: 25px;
-       cursor: pointer;
-       font-weight: bold;
-       margin-top: 20px;
-       
-       
-  }
-
-  button:hover{
-       background-color: yellow;
-       color: red;
-    
-  }
+  
   
   .contenedoredit h2 {
     font-size: 24px;
@@ -57,14 +41,14 @@
   
   
   .contenedoredit button[type="submit"] {
-    background-color: #c4e413;
-    color: #3f0909;
+    background-color: yellow;
+    color: black;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 5px;
   }
   
   

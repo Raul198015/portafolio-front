@@ -1,0 +1,16 @@
+.projects li{
+    list-style-type: none;
+}
+ .projects{
+    background-color:red;
+    border: 5px solid black;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin: 10%;
+  }
+  h1{
+    color:yellow;
+
+  }

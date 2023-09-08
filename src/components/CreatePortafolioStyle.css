@@ -5,22 +5,25 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 50vh;
+    height: 60vh;
     margin: 100px;
     padding: 40px;
     background-color: red;
     border: 5px solid black;
     border-radius: 250px;
+    color: blue;
     }
     
    .contenedorportafolio h2 {
    font-size: 24px;
-   color: #333;
+   color: yellow;
+   margin-bottom: 20px;
    }
+   
   
   
   .contenedorportafolio form div {
-   margin: 10px 0;
+   margin: 25px 10px ;
   }
   
   
@@ -42,15 +45,15 @@
     color: black;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 5px;
   }
   
   
   .contenedorportafolio button[type="submit"]:hover {
-    background-color: #6086ac;
+    background-color: #f50909;
   }
   
   

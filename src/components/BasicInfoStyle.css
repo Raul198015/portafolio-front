@@ -1,9 +1,9 @@
 /* Estilo para el contenedor principal del componente BasicInfo */
 .basic-info-container {
     text-align: center;
-    margin: 20px;
+    margin: 10%;
     padding: 20px;
-    background-color: grey;
+    background-color: red;
     border: 5px solid black;
     border-radius: 25px;
   }

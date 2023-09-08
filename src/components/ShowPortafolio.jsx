@@ -31,13 +31,16 @@ const ShowCharacters = () => {
             </div >
             {characters.map(character => (
                 <div key={character.id} className="card">
+                    
                     <img src={character.img} alt="" className="img" />
                     <h3>{character.nombre}</h3>
                     <p>{character.descripcion}</p> 
                     <p>{character.urlrepo}</p>
                     <p>{character.lenguaje}</p>
                     <p>{character.imagen}</p>
-                    <NavLink to={`/edit/${character.id}`}><button>editar</button></NavLink>
+                    <div className="button-container">
+                    <NavLink to={`/edit/${character.id}`}className="edit-button"><button>editar</button></NavLink>
+                    </div>
                     <DeleteCharacter id={character.id} onDelete={getAllCharacters} />
                 </div>
             ))}
