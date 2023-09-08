@@ -1,0 +1,40 @@
+/* Estilo para el contenedor principal del componente BasicInfo */
+.basic-info-container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: grey;
+    border: 5px solid black;
+    border-radius: 25px;
+  }
+  
+  /* Estilo para los encabezados h2 */
+  .basic-info-container h2 {
+    font-size: 24px;
+    color: black;
+  }
+  
+  /* Estilo para los párrafos p */
+  .basic-info-container p {
+    font-size: 16px;
+    color: black;
+    margin: 10px 0;
+  }
+  
+  /* Estilo para los enlaces a */
+  .basic-info-container a {
+    color: yellow;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  /* Estilo para el efecto hover en los enlaces a */
+  .basic-info-container a:hover {
+    color: red;
+  }
+  
+  
+ 
+  
+  
+ 

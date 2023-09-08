@@ -1,0 +1,56 @@
+/* Estilo para el contenedor principal del componente CreatePortafolio */
+.contenedorportafolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+    margin: 100px;
+    padding: 40px;
+    background-color: red;
+    border: 5px solid black;
+    border-radius: 250px;
+    }
+    
+   .contenedorportafolio h2 {
+   font-size: 24px;
+   color: #333;
+   }
+  
+  
+  .contenedorportafolio form div {
+   margin: 10px 0;
+  }
+  
+  
+  .contenedorportafolio label {
+    display: block;
+    font-weight: bold;
+  }
+  
+   .contenedorportafolio input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  .contenedorportafolio button[type="submit"] {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  
+  .contenedorportafolio button[type="submit"]:hover {
+    background-color: #6086ac;
+  }
+  
+  

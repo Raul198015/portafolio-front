@@ -1,0 +1,72 @@
+.contenedoredit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50vh; 
+    padding: 40px;
+    margin: 100px;
+    background-color: red;
+    border: 5px solid black;
+    border-radius: 250px;
+    }
+  button{
+       background-color: red;
+       color: white;
+       padding: 10px 20px;
+       border: solid 4px black;
+       border-radius: 25px;
+       cursor: pointer;
+       font-weight: bold;
+       
+  }
+
+  button:hover{
+       background-color: yellow;
+       color: red;
+    
+  }
+  
+  .contenedoredit h2 {
+    font-size: 24px;
+    color: #4a13e2;
+    margin-bottom: 20px;
+  }
+  
+  
+  .contenedoredit form div {
+    margin: 25px 10px;
+  }
+  
+  
+  .contenedoredit label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  
+  .contenedoredit input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  .contenedoredit button[type="submit"] {
+    background-color: #c4e413;
+    color: #3f0909;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  
+  .contenedoredit button[type="submit"]:hover {
+    background-color: #f50909;
+  }
+  
