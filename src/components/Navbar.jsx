@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavbarStyle.css'; 
+import logoImage from '../components/foto-carnet2.png';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link to="/">Portafolio</Link>
+        <Link to="/">
+        <img src={logoImage} alt="Logo" width={50} />
+        </Link>
       </div>
       <ul className="nav-links">
         <li>
@@ -18,7 +21,7 @@ const Navbar = () => {
         <li>
           <Link to="/portfolio">Portafolio</Link>
         </li>
-        {/* Agrega más enlaces según tus secciones */}
+        
       </ul>
     </nav>
   );

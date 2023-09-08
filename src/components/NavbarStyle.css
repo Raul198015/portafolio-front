@@ -5,16 +5,20 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    width: 100%;
+    width: 99%;
     position: fixed;
     top: 0;
     left: 0;
     text-align: center;
   }
+  .logo{
+    width: 200px;
+     }
   .logo a {
     color: #bde957;
     font-size: 1 rem;
     font-weight: bold;
+    
   }
    
   .nav-links {

@@ -5,6 +5,7 @@ import PortafolioForm from '../components/PortafolioForm';
 import PortafolioList from '../components/PortafolioList';
 import Navbar from '../components/Navbar';
 import "./HomeStyle.css";
+import VideoComponent from '../components/VideoComponent';
 
 const Home = () => {
   const proyectos = [
@@ -30,8 +31,9 @@ const Home = () => {
       <Navbar />
       
       <div className="center-text">
-      <h1>"Portafolio"</h1>
+      <h1>"Porfolio"</h1>
       </div>
+      <VideoComponent />
       <ShowPortafolio />
       <BasicInfo />
       <PortafolioForm />
