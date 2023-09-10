@@ -19,8 +19,9 @@ const GitHubProjects = () => {
 
   return (
     <div>
-      <h1>Mis Proyectos de GitHub</h1>
+
       <div className="projects">
+      <h1>Mis Proyectos de GitHub</h1>
       <ul>
         {projects.map(project => (
           <li key={project.id}>

@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import "./HomeStyle.css";
 import VideoComponent from '../components/VideoComponent';
 import GitHubProjects from '../components/GitHubProjects';
+import Footer from '../components/Footer';
 
 const Home = () => {
   
@@ -19,6 +20,7 @@ const Home = () => {
       <ShowPortafolio />
       <BasicInfo />
       <GitHubProjects />
+      <Footer />
       
          </div>
   );

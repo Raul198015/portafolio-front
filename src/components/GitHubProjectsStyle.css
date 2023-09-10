@@ -1,16 +1,18 @@
 .projects li{
     list-style-type: none;
+    ;
 }
  .projects{
-    background-color:red;
+    background-color:white;
     border: 5px solid black;
     border-radius: 25px;
     text-align: center;
     color: white;
     position: relative;
-    margin: 10%;
+    margin: 20%;
+    margin-bottom: 50%;
   }
-  h1{
-    color:yellow;
+  .projects h1{
+    color:red;
 
   }

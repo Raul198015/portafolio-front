@@ -1,43 +1,75 @@
+
+
+
+
 .navbar {
-    background-color: red; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    width: 99%;
-    position:absolute ;
-    top: 0;
-    left: 0;
-    text-align: center;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: background-color 0.9s; /* Efecto de transición de fondo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: changeColor 10s infinite alternate;  /* Efecto de sombra */
+}
+@keyframes changeColor {
+  0% {
+    background-color:brown;
   }
-  .logo{
-    width: 200px;
-     }
-  .logo a {
-    color: #bde957;
-    font-size: 1 rem;
-    font-weight: bold;
-    
+  25% {
+    background-color: blue;
   }
-   
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  
+  50% {
+    background-color: darkslategray
   }
-    
-  
-  .nav-links a {
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    transition: color 0.3s;
+  75% {
+    background-color: black;
   }
-    
-  .nav-links a:hover {
-    color: red; 
+  100% {
+    background-color: purple;
   }
+}
+
+
+
+.logo {
+  width: 200px;
+}
+
+.logo a {
+  color: #bde957;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 1rem;
+  transition: color 0.3s, font-weight 0.3s; /* Transición de color y grosor */
+}
+
+.nav-links a:hover {
+  color: white;
+  font-weight: bold; /* Efecto de texto en negrita al pasar el cursor */
+}
+
+.navbar:hover {
+  background-color: #1a0602; /* Cambio de color de fondo al pasar el cursor */
+}
+
   
   
   

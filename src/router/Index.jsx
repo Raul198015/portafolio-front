@@ -33,4 +33,6 @@ export const router = createBrowserRouter([
         path: "/delete/:id",
         element: <DeletePortafolio/>
     }
+    
+    
 ])

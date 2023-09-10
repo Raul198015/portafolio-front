@@ -1,13 +1,14 @@
-body{
-    background-color:aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-
-
+body {
+  background-image: url('../components/scott-webb-mV9-1XjnM4Y-unsplash.jpg'); /* Ruta relativa a la carpeta 'components' */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 
 .center-text {
     display: flex;
@@ -21,5 +22,6 @@ body{
   .center-text h1 {
     font-size: 150px; 
     margin-top: 10%;
+    color:yellow;
   }
   
