@@ -21,9 +21,11 @@ const Home = () => {
       <BasicInfo />
       <GitHubProjects />
       <Footer />
-      
-         </div>
+      </div>  
+         
   );
+
+  
 };
 
 export default Home;

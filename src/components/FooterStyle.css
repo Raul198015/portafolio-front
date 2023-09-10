@@ -12,7 +12,7 @@ footer {
   }
   
   .social-icons a {
-    color: #fff; /* Color de los iconos */
+    color: yellow; /* Color de los iconos */
     font-size: 24px; /* Tamaño de los iconos */
     margin-right: 20px; /* Espacio entre los iconos */
     text-decoration: none; /* Sin subrayado enlaces */
