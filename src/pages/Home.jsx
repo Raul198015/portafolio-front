@@ -8,25 +8,21 @@ import GitHubProjects from '../components/GitHubProjects';
 import Footer from '../components/Footer';
 
 const Home = () => {
-  
   return (
     <div>
       <Navbar />
-      
       <div className="center-text">
-      <h1>"Porfolio"</h1>
+        <h1 className="awesome-title">"Porfolio"</h1>
       </div>
       <VideoComponent />
-      <ShowPortafolio />
       <BasicInfo />
       <GitHubProjects />
+      <ShowPortafolio />
       <Footer />
-      </div>  
-         
+    </div>
   );
-
-  
 };
 
 export default Home;
+
 

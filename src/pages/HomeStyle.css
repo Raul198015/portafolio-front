@@ -1,5 +1,5 @@
 body {
-  background-image: url('../components/scott-webb-mV9-1XjnM4Y-unsplash.jpg'); /* Ruta relativa a la carpeta 'components' */
+  background-image: url('../components/noche2.jpg'); /* Ruta relativa a la carpeta 'components' */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -9,7 +9,6 @@ body {
   text-align: center;
 }
 
-
 .center-text {
     display: flex;
     justify-content: center;
@@ -18,10 +17,13 @@ body {
     margin-top: 20px; 
   }
   
-  
   .center-text h1 {
-    font-size: 150px; 
+    font-size: 200px; 
     margin-top: 10%;
-    color:yellow;
+    color:red;
   }
   
+.awesome-title {
+  text-transform: uppercase; 
+  text-shadow: 6px 6px  yellow, 10px 10px   pink , 14px 14px  blue, 18px 18px  black, 22px 22px green; 
+}

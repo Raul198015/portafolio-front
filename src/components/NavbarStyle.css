@@ -1,7 +1,3 @@
-
-
-
-
 .navbar {
   background-color: red;
   display: flex;
@@ -13,28 +9,10 @@
   left: 0;
   right: 0;
   text-align: center;
-  transition: background-color 0.9s; /* Efecto de transición de fondo */
+  transition: background-color 5s; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  animation: changeColor 10s infinite alternate;  /* Efecto de sombra */
+  animation: changeColor 20s infinite alternate;
 }
-@keyframes changeColor {
-  0% {
-    background-color:brown;
-  }
-  25% {
-    background-color: blue;
-  }
-  50% {
-    background-color: darkslategray
-  }
-  75% {
-    background-color: black;
-  }
-  100% {
-    background-color: purple;
-  }
-}
-
 
 
 .logo {
@@ -58,16 +36,16 @@
   text-decoration: none;
   color: yellow;
   font-size: 1rem;
-  transition: color 0.3s, font-weight 0.3s; /* Transición de color y grosor */
+  transition: color 0.3s, font-weight 0.3s; 
 }
 
 .nav-links a:hover {
   color: white;
-  font-weight: bold; /* Efecto de texto en negrita al pasar el cursor */
+  font-weight: bold; 
 }
 
 .navbar:hover {
-  background-color: #1a0602; /* Cambio de color de fondo al pasar el cursor */
+  background-color: #1a0602; 
 }
 
   

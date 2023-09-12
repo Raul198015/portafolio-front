@@ -7,7 +7,7 @@ const GitHubProjects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    // Cambia 'tu-usuario' al nombre de usuario de tu cuenta de GitHub
+    
     axios.get('https://api.github.com/users/Raul198015/repos')
       .then(response => {
         setProjects(response.data);
