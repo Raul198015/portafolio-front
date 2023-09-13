@@ -4,13 +4,15 @@ import ShowPortafolio from "../components/ShowPortafolio.jsx";
 import CreatePortafolio from "../components/CreatePortafolio.jsx";
 import EditPortafolio from "../components/EditPortafolio.jsx";
 import DeletePortafolio from "../components/DeletePortafolio.jsx";
-
-
-
+import Projects from "../pages/Projects.jsx";
 
 export const router = createBrowserRouter([
     {
         path: "/",
+        element: <Home/>
+    },
+    {
+        path: "/home",
         element: <Home/>
     },
     
@@ -32,7 +34,10 @@ export const router = createBrowserRouter([
     {
         path: "/delete/:id",
         element: <DeletePortafolio/>
+    },
+    
+    {
+        path: "/projects",
+        element: <Projects/>
     }
-    
-    
-])
+]);

@@ -14,23 +14,26 @@
     left:0;
     right: 0;
     margin: 30%;
-    background-color: grey;
-    padding: 30px;
+    background-image:  url('../components/noche3.jpg');
     border: 5px solid black;
     border-radius: 10px;
     text-align: center;
-    color: black;
+    color: white;
     position: relative;
       
   }
   
+  
   .card p {
-    background-color: white;
+    background-color: yellow;
     color: black;
     border: 5px solid black;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
   }
   
   .card img {

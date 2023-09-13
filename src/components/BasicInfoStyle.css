@@ -2,7 +2,7 @@
     text-align: center;
     margin: 10%;
     padding: 20px;
-    background-image: url('../components/noche1.jpg');
+    background-image: url('../components/planeta.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: fixed; 
@@ -16,14 +16,15 @@
   }
   
   .basic-info-container p {
-    font-size: 22px;
-    color: white;
+    font-size: 26px;
+    color:yellow;
     margin: 10px 0;
     font-family: cursive;
   }
   
   .basic-info-container a {
-    color: yellow;
+    color: red;
+    font-family: cursive;
     text-decoration: none;
     transition: color 0.3s;
   }

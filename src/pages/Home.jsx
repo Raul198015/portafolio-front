@@ -4,7 +4,6 @@ import BasicInfo from '../components/BasicInfo';
 import Navbar from '../components/Navbar';
 import "./HomeStyle.css";
 import VideoComponent from '../components/VideoComponent';
-import GitHubProjects from '../components/GitHubProjects';
 import Footer from '../components/Footer';
 
 const Home = () => {
@@ -12,11 +11,10 @@ const Home = () => {
     <div>
       <Navbar />
       <div className="center-text">
-        <h1 className="awesome-title">"Porfolio"</h1>
+      <h1 className="awesome-title">"Porfolio"</h1>
       </div>
       <VideoComponent />
       <BasicInfo />
-      <GitHubProjects />
       <ShowPortafolio />
       <Footer />
     </div>

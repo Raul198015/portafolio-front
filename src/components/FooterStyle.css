@@ -1,11 +1,12 @@
 footer {
-    background-color: red; 
+    background-image: url('../components/noche3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #fff; 
     padding: 20px;
     text-align: center;
-    margin-top: 40px;
-
-    
+    width: 98%;
+    margin-top:25px;
   }
   
   .social-icons {

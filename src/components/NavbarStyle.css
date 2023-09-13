@@ -1,5 +1,7 @@
 .navbar {
-  background-color: red;
+  background-image: url('../components/noche3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,9 +11,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  transition: background-color 5s; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  animation: changeColor 20s infinite alternate;
+   
 }
 
 

@@ -4,19 +4,19 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 80vh;
-  margin: 100px;
-  padding: 40px;
-  background-color: red;
+  width: 100%;
+  background-image: url('../components/noche3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 5px solid black;
   border-radius: 50px;
-  color: blue;
+  color: yellow;
     }
   
   
   .contenedoredit h2 {
     font-size: 24px;
-    color: #4a13e2;
+    color: yellow;
     margin-bottom: 20px;
     
   }

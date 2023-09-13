@@ -1,5 +1,6 @@
 .contenedorportafolio {
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -7,15 +8,16 @@
     height: 70vh;
     margin: 10px;
     padding: 20px;
-    background-color: red;
+    background-image: url('../components/noche3.jpg');
     border: 5px solid black;
     border-radius: 25px;
-    color: blue;
+    color:yellow;
     }
+    
     
    .contenedorportafolio h2 {
    font-size: 24px;
-   color: yellow;
+   color:yellow;
    margin-bottom: 20px;
    }
    

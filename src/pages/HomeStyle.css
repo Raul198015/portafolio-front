@@ -1,14 +1,12 @@
-body {
-  background-image: url('../components/noche2.jpg'); /* Ruta relativa a la carpeta 'components' */
+#root {
+  width: 100%;
+  overflow: hidden; 
+  text-align: center;
+  background-image: url('../components/noche1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
+  background-position: fixed;
+  }
 .center-text {
     display: flex;
     justify-content: center;
@@ -18,12 +16,12 @@ body {
   }
   
   .center-text h1 {
-    font-size: 200px; 
+    font-size: 150px; 
     margin-top: 10%;
     color:red;
   }
   
-.awesome-title {
+.awesome-title  {
   text-transform: uppercase; 
   text-shadow: 6px 6px  yellow, 10px 10px   pink , 14px 14px  blue, 18px 18px  black, 22px 22px green; 
 }
