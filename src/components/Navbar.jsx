@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faSheetPlastic, faPlus, faPaintRoller } from '@fortawesome/free-solid-svg-icons'; // Importa los íconos que necesitas
+import { faHouse, faSheetPlastic, faPlus, faPaintRoller, faFileSignature } from '@fortawesome/free-solid-svg-icons'; // Importa los íconos que necesitas
 import './NavbarStyle.css'; 
 import logoImage from '../components/foto-carnet2.png';
 
@@ -34,6 +34,11 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faPaintRoller} bounce size="lg" />
           </Link>
         </li>
+        <li>
+          <Link to="/Contacto">
+          <FontAwesomeIcon icon={faFileSignature} bounce size="lg" />
+          </Link>
+        </li> 
       </ul>
     </nav>
   );
