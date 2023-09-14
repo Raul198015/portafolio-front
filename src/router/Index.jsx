@@ -39,5 +39,9 @@ export const router = createBrowserRouter([
     {
         path: "/projects",
         element: <Projects/>
+    },
+    {
+        path: "/creados",
+        element: <ShowPortafolio/>
     }
 ]);

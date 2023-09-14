@@ -16,10 +16,13 @@
   }
   
   .basic-info-container p {
-    font-size: 26px;
+    font-size: 22px;
     color:yellow;
     margin: 10px 0;
     font-family: cursive;
+    font-weight: bold;
+
+
   }
   
   .basic-info-container a {

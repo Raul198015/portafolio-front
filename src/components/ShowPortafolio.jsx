@@ -24,19 +24,23 @@ const ShowCharacters = () => {
 
     return (
         <div className="show-portafolio-container"    >
-            <div>
-                <NavLink to="/create">
-                    <button className="btn btn-primary">Create</button>
-                </NavLink>
-            </div >
+            
             {characters.map(character => (
                 <div key={character.id} className="card">
                     
+                    
+                    <h2>Repositorio</h2>
+                    <h3>Imagen</h3>
                     <img src={character.img} alt="" className="img" />
-                    <h3>{character.nombre}</h3>
-                    <p>{character.descripcion}</p> 
+                    <h3>Nombre</h3>
+                    <p>{character.nombre}</p>
+                    <h3>Descripción</h3>
+                    <p>{character.descripcion}</p>
+                    <h3>Urlrepo</h3> 
                     <p>{character.urlrepo}</p>
+                    <h3>Lenguaje</h3>
                     <p>{character.lenguaje}</p>
+                    <h3>Imagen</h3>
                     <p>{character.imagen}</p>
                     <div className="button-container">
                     <NavLink to={`/edit/${character.id}`}className="edit-button"><button>editar</button></NavLink>

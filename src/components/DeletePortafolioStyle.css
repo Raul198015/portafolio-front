@@ -11,10 +11,10 @@
   
   
   .delete button {
-    background-color: #ff0000;
+    background-color: blue;
     color: #fff;
     padding: 10px 20px;
-    border: solid 4px black;
+    border: solid 5px yellow;
     border-radius: 25px;
     cursor: pointer;
     font-weight: bold;

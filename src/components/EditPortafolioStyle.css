@@ -1,42 +1,53 @@
+body{
+  background-image: url('../components/noche3.jpg');
+}
 .contenedoredit {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  background-image: url('../components/noche3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 5px solid black;
+  height: 65vh;
+  padding: 20px;
+  margin:  50px;
+  border: 5px solid yellow;
   border-radius: 50px;
   color: yellow;
     }
   
   
   .contenedoredit h2 {
-    font-size: 24px;
+    font-size: 32px;
     color: yellow;
-    margin-bottom: 20px;
-    
+    margin-bottom: 10px;
+    text-align: center;
   }
   
   
   .contenedoredit form div {
-    margin: 25px 10px;
-  }
-  
+    
+      margin: 5px 5px;
+      display: flex;
+      flex-direction: column; /* Alinea los elementos verticalmente */
+      align-items: center; /* Centra horizontalmente los elementos en el div */
+      text-align: center;
+    }
+    
+    
+    
   
   .contenedoredit label {
-    display: block;
+    
+    font-size: 20px;
+    text-align: center;
     font-weight: bold;
+    margin-bottom: 5px;
+
   }
   
   
   .contenedoredit input {
-    width: 100%;
+    text-align: center;
+    width: 70%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 5px solid yellow;
     border-radius: 5px;
   }
   
@@ -45,7 +56,6 @@
     background-color: yellow;
     color: black;
     padding: 10px 20px;
-    border: none;
     border-radius: 25px;
     cursor: pointer;
     font-weight: bold;
