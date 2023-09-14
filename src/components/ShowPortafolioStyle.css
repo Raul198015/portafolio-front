@@ -77,6 +77,7 @@
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
+    
     }
     
   
@@ -106,6 +107,7 @@
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
+    margin: 40px;
     }
     
   

@@ -46,6 +46,7 @@ const ShowCharacters = () => {
                     <NavLink to={`/edit/${character.id}`}className="edit-button"><button>editar</button></NavLink>
                     </div>
                     <DeleteCharacter id={character.id} onDelete={getAllCharacters} />
+                    <button onClick={() => navigate("/")}>Volver a Home</button>
                 </div>
             ))}
         </div>

@@ -2,11 +2,12 @@
   width: 100%;
   overflow: hidden; 
   text-align: center;
-  background-image: url('../components/noche1.jpg');
+  background-image: url('../components/planeta.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed;
   }
+
 .center-text {
     display: flex;
     justify-content: center;

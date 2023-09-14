@@ -60,7 +60,9 @@ const CreatePortafolio = () => {
       </form>
 
       
-      <Link to="/">Volver a Home</Link>
+      <button onClick={() => navigate("/")}>Volver a Home</button>
+      
+      
     </div>
   );
 };
