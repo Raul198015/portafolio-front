@@ -25,7 +25,7 @@ const GitHubProjects = () => {
       <ul>
         {projects.map(project => (
           <li key={project.id}>
-            <a href={project.html_url} target="_blank" rel="noopener noreferrer">
+            <a href={project.html_url} target="_blank" rel="noopener noreferrer" >
               {project.name}
             </a>
           </li>

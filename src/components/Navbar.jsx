@@ -2,15 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faSheetPlastic, faPlus, faPaintRoller, faFileSignature } from '@fortawesome/free-solid-svg-icons'; // Importa los íconos que necesitas
-import './NavbarStyle.css'; 
-import logoImage from '../components/foto-carnet2.png';
+import './NavbarStyle.css';
+import logoImage from '../components/fotocarnet.png'; 
+
 
 const Navbar = () => {
   return (
     <nav className="navbar">
+      <div className='img-container'>
+        <img src="src/components/cometa2.png" alt="cometa" />
+      </div>
       <div className="logo">
         <Link to="/">
-          <img src={logoImage} alt="Logo" width={75} />
+          <img src={logoImage} alt="Logo" width={70} />
         </Link>
       </div>
       <ul className="nav-links">

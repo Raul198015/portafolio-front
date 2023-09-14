@@ -1,6 +1,5 @@
 .show-characters-container {
   display: flex;
-  overflow: hidden;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -10,112 +9,158 @@
   padding: 20px;
   background-image: url('../components/noche2.jpg');
   border-radius: 25px;
-  color:yellow;
+  color: yellow;
   font-size: 20px;
-  }
-  
-  
- 
-  .card{
-    display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-   margin: 10%;
-   background-image: url('../components/noche3.jpg');
-   border: 5px solid yellow;
-   color: yellow;
-   border-radius: 10px;
-   text-align: center;
-   position: relative;
-   padding: 30px; /* Aumenta el padding interno */
-       
- }
+}
 
-  .card h2{
-    background-color: blue;
-    border:solid yellow 5px;
-    border-radius: 25px;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10%;
+  background-image: url('../components/noche3.jpg');
+  border: 5px solid yellow;
+  color: yellow;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  padding: 30px;
+}
+
+.card h2 {
+  background-color: blue;
+  border: solid yellow 5px;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.card h3 {
+  background-color: blue;
+  border: solid yellow 5px;
+  border-radius: 25px;
+  padding: 10px;
+  color: yellow;
+  font-size: 20px;
+}
+
+.card p {
+  width: 90%;
+  background-color: white;
+  color: black;
+  border: 5px solid yellow;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.card img {
+  padding: 15%;
+  width: 50%;
+  border: 5px solid yellow;
+  border-radius: 10px;
+}
+
+.card button {
+  background-color: blue;
+  color: #fff;
+  border: solid yellow;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 5px solid yellow;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+.card button:hover {
+  background-color: yellow;
+  color: red;
+  border-color: red;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.edit-button button {
+  background-color: blue;
+  color: #fff;
+  border: solid yellow;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 5px solid yellow;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin: 20px;
+}
+
+.edit-button button:hover {
+  background-color: yellow;
+  color: red;
+  border-color: red;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .show-characters-container {
+    height: auto;
+    margin: 20px;
     padding: 10px;
+    font-size: 16px;
   }
-  .card h3{
-    background-color: blue;
-    border:solid yellow 5px;
-    border-radius: 25px;
-    padding: 10px;
-    color: yellow;
-    font-size: 20px;
+
+  .card {
+    margin: 5%;
+    padding: 20px;
   }
-  
+
+  .card h2 {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    padding: 5px;
+  }
+
   .card p {
-    width: 90%;
-    background-color: white;
-    color: black;
-    border: 5px solid yellow;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 50px;
+    font-size: 14px;
+    margin-top: 20px;
   }
-  
-  .card img { 
-    padding: 15%;
-    width: 50%;
-    border: 5px solid yellow;
-    border-radius: 10px;
-      
-   }
-  
+
+  .card img {
+    padding: 10%;
+    width: 70%;
+  }
+
   .card button {
-    background-color: blue;
-    color: #fff;
-    border: solid yellow;
-    padding: 10px 20px;
-    border-radius: 25px;
-    border: 5px solid yellow;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    
-    }
-    
-  
-  .card button:hover {
-    background-color: yellow;
-    color: red;
-    border-color: red;
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 5px;
   }
-   
+
   .button-container {
-    position: absolute; 
-    bottom: 100px;
-    left: 50%; 
-    transform: translateX(-50%); 
-    width: 100%; 
-    text-align: center;
+    bottom: 50px;
   }
-  
-  
+
   .edit-button button {
-    background-color: blue;
-    color: #fff;
-    border: solid yellow;
-    padding: 10px 20px;
-    border-radius: 25px;
-    border: 5px solid yellow;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    margin: 40px;
-    }
-    
-  
-  .edit-button button:hover {
-    background-color: yellow;
-    color: red;
-    border-color: red;
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 10px;
   }
+}
+
    
   
   

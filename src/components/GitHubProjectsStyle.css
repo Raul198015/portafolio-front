@@ -1,26 +1,43 @@
-.projects li{
-  list-style-type: none;
-  }
- .projects{
+.projects li {
+  text-align: center;
+  color: yellow;
+}
+
+.projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 70vh;
+  height: auto; /* Elimina la altura fija en pantallas pequeñas */
   padding: 20px;
-  background-image: url('../components/noche2.jpg');
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center; 
+  background-image: url('../components/planeta1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 5px solid yellow;
   border-radius: 25px;
-  position: relative;
-  margin: 20%;
-  margin-bottom: 50%;
+  margin: 10%; /* Ajusta el margen en pantallas pequeñas */
+  margin-bottom: 10%; /* Ajusta el margen inferior en pantallas pequeñas */
+}
+
+.projects h1 {
+  color: yellow;
+  font-size: 40px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+  margin-top: 20px; /* Ajusta el margen superior en pantallas pequeñas */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .projects {
+    margin: 5%; /* Ajusta el margen en pantallas más pequeñas */
+    margin-bottom: 5%; /* Ajusta el margen inferior en pantallas más pequeñas */
   }
-  .projects h1{
-    color:yellow;
-    font-size: 70px;
+
+  .projects h1 {
+    font-size: 30px; /* Reduce aún más el tamaño de fuente en pantallas más pequeñas */
+    margin-top: 10px; /* Ajusta el margen superior en pantallas más pequeñas */
   }
+}
+
+  
   

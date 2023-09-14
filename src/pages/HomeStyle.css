@@ -1,28 +1,72 @@
+/* Estilos base */
 #root {
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
   text-align: center;
   background-image: url('../components/planeta.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed;
-  }
+}
 
 .center-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 20px; 
-  }
-  
-  .center-text h1 {
-    font-size: 150px; 
-    margin-top: 10%;
-    color:red;
-  }
-  
-.awesome-title  {
-  text-transform: uppercase; 
-  text-shadow: 6px 6px  yellow, 10px 10px   pink , 14px 14px  blue, 18px 18px  black, 22px 22px green; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
 }
+
+.center-text h1 {
+  font-size: 150px;
+  margin-top: 10%;
+  color: red;
+}
+
+.awesome-title {
+  text-transform: uppercase;
+  text-shadow: 6px 6px yellow, 10px 10px pink, 14px 14px blue, 18px 18px black, 22px 22px green;
+}
+
+.img-container {
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  top: 50%;
+  left: 10px;
+  animation: meteoritoMove 4s linear infinite;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Define la animación meteoritoMove */
+@keyframes meteoritoMove {
+  0% {
+    left: -100px; /* Comienza fuera del borde izquierdo */
+  }
+  100% {
+    left: 85%; /* Termina fuera del borde derecho */
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .center-text h1 {
+    font-size: 100px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+  }
+
+  .awesome-title {
+    text-shadow: 3px 3px yellow, 6px 6px pink, 9px 9px blue, 12px 12px black, 15px 15px green; /* Reduce el desplazamiento de sombra en pantallas pequeñas */
+  }
+
+  .img-container {
+    width: 150px; /* Reduce el tamaño del contenedor de imagen en pantallas pequeñas */
+    height: 100px; /* Reduce el tamaño del contenedor de imagen en pantallas pequeñas */
+    left: 5px; /* Cambia la posición inicial en pantallas pequeñas */
+  }
+  
+}
+

@@ -5,7 +5,9 @@ import { faUser, faEnvelope, faPhone, faFilePdf } from '@fortawesome/free-solid-
 import { faGithub, faLinkedin,} from '@fortawesome/free-brands-svg-icons';
 const BasicInfo = () => {
   return (
-    <div className="basic-info-container">
+    
+    
+      <div className="basic-info-container">
       <section>
         <h1>Datos de Contacto</h1>
         <p><FontAwesomeIcon icon={faUser} /> Nombre: Raul Labajos Oca</p>      
@@ -16,7 +18,7 @@ const BasicInfo = () => {
           <p><FontAwesomeIcon icon={faLinkedin} /> LinkedIn:{' '}<a href="https://www.linkedin.com/in/raul-labajos-oca" target="_blank" rel="noopener noreferrer">Mi Perfil</a></p>
           <p><FontAwesomeIcon icon={faFilePdf} /> Currículum:{' '}<a href="/CurriculumFullStack.pdf" download>Descarga Mi Currículum</a></p>
       </section>
-
+      
       <section>
         <h1>Sobre Mi</h1>
         <p>

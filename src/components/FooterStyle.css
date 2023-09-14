@@ -24,4 +24,17 @@ footer {
   .social-icons a:last-child {
     margin-right: 0; 
   }
+  @media (max-width: 768px) {
+    footer {
+      padding: 10px; /* Reduce el espacio de relleno en pantallas pequeñas */
+    }
+  
+    .social-icons {
+      margin-top: 5px; /* Reduce el margen superior para un mejor ajuste en pantallas pequeñas */
+    }
+  
+    .social-icons a {
+      font-size: 20px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    }
+  }
   
