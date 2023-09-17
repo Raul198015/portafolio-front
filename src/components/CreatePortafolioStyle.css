@@ -4,11 +4,16 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url('../components/noche4.jpg');
   border: 5px solid yellow;
   border-radius: 25px;
   color: yellow;
   font-size: 20px;
+  margin-bottom: 4%;
+  margin-top: 4%;
+  margin-left:25%;
+  margin-right:25%;
+  box-shadow: 0 0 20px 30px blue; 
+  
 }
 
 .contenedorportafolio h2 {
@@ -32,10 +37,13 @@
 }
 
 .contenedorportafolio input {
-  width: 100%; /* Cambiado para ajustarse al ancho del contenedor */
-  padding: 10px;
+  width: 200%; 
+  padding: 20px;
   border: 5px solid yellow;
   border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+
 }
 
 .contenedorportafolio button[type="submit"] {
@@ -78,15 +86,4 @@ button:hover {
   font-size: 16px;
 }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-  .contenedorportafolio input {
-    width: 100%; /* Cambiado para ajustarse al ancho del contenedor */
-    padding: 10px;
-  }
-  
-  .contenedorportafolio button[type="submit"] {
-    margin: 10px; /* Reduzco el margen inferior para pantallas pequeñas */
-  }
-}
 

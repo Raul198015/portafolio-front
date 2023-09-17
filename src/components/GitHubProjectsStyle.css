@@ -1,6 +1,21 @@
+.projectscontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10%;
+  background-color:transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
 .projects li {
   text-align: center;
   color: yellow;
+}
+.projects a{
+  color:yellow;
 }
 
 .projects {
@@ -9,35 +24,23 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: auto; /* Elimina la altura fija en pantallas pequeñas */
-  padding: 20px;
-  background-image: url('../components/planeta1.jpg');
+  padding: 100px;
+  background-color:transparent;
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid yellow;
   border-radius: 25px;
-  margin: 10%; /* Ajusta el margen en pantallas pequeñas */
-  margin-bottom: 10%; /* Ajusta el margen inferior en pantallas pequeñas */
+  margin: 15%;
+  box-shadow: 0 0 30px 30px red; 
+  
 }
 
 .projects h1 {
   color: yellow;
-  font-size: 40px; /* Reduce el tamaño de fuente en pantallas pequeñas */
-  margin-top: 20px; /* Ajusta el margen superior en pantallas pequeñas */
+  font-size: 40px;
+  margin-top: 20px; 
 }
 
-/* Media Query para pantallas pequeñas */
-@media (max-width: 768px) {
-  .projects {
-    margin: 5%; /* Ajusta el margen en pantallas más pequeñas */
-    margin-bottom: 5%; /* Ajusta el margen inferior en pantallas más pequeñas */
-  }
-
-  .projects h1 {
-    font-size: 30px; /* Reduce aún más el tamaño de fuente en pantallas más pequeñas */
-    margin-top: 10px; /* Ajusta el margen superior en pantallas más pequeñas */
-  }
-}
 
   
   

@@ -30,23 +30,21 @@ const ShowCharacters = () => {
                     
                     
                     <h2>Repositorio</h2>
-                    <h3>Imagen</h3>
-                    <img src={character.img} alt="" className="img" />
                     <h3>Nombre</h3>
                     <p>{character.nombre}</p>
                     <h3>Descripción</h3>
                     <p>{character.descripcion}</p>
                     <h3>Urlrepo</h3> 
                     <p>{character.urlrepo}</p>
-                    <h3>Lenguaje</h3>
-                    <p>{character.lenguaje}</p>
+                    <h3>Lenguajes</h3>
+                    <p>{character.lenguajes}</p>
                     <h3>Imagen</h3>
                     <p>{character.imagen}</p>
                     <div className="button-container">
                     <NavLink to={`/edit/${character.id}`}className="edit-button"><button>editar</button></NavLink>
                     </div>
                     <DeleteCharacter id={character.id} onDelete={getAllCharacters} />
-                    <button onClick={() => navigate("/")}>Volver a Home</button>
+                    
                 </div>
             ))}
         </div>

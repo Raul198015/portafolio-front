@@ -1,8 +1,5 @@
 .contacto-background {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -10,28 +7,22 @@
 }
 
 .contacto-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 30px;
+  padding: 100px;
   border: 5px solid yellow;
   border-radius: 5px;
-  box-shadow: 0 0 30px yellow;
+  box-shadow: 0 0 40px 10px yellow;
   text-align: center;
   background-color: transparent;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: fixed;
+  
 }
 
-/* Estilos para el título */
 .contacto-container h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin: 30px;
   text-align: center;
   color: yellow;
 }
 
-/* Estilos para las etiquetas de los campos */
 .form-group label {
   display: block;
   font-weight: bold;
@@ -40,49 +31,32 @@
   color: yellow;
 }
 
-/* Estilos para los campos de entrada */
+
 .form-group {
   display: flex;
-  flex-direction: column; /* Apila verticalmente los elementos en el .form-group */
-  align-items: center; /* Centra horizontalmente los elementos en el .form-group */
+  flex-direction: column;
+  align-items: center; 
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
   width: 100%;
-  padding: 18px;
-  margin-bottom: 10px; /* Reduje el margen inferior para acercar los elementos */
+  padding: 28px;
+  margin-bottom: 10px; 
   border: 4px solid yellow;
   border-radius: 5px;
   font-size: 16px;
   text-align: center;
 }
 
-button {
-  margin-bottom: 2%;
+.btnem {
+  margin: 15%;
+
+}
+.btnen{
+  margin: 5%;
 }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-  .contacto-container {
-    max-width: 90%; /* Reduzco el ancho máximo para adaptarse a pantallas pequeñas */
-    padding: 20px; /* Aumento el padding para mejorar la legibilidad */
-  }
 
-  .contacto-container h2 {
-    font-size: 24px; /* Reduzco el tamaño de fuente del título */
-  }
 
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group textarea {
-    padding: 14px; /* Reduzco el padding de los campos de entrada */
-  }
-
-  button {
-    margin-bottom: 4%; /* Aumento el margen inferior del botón */
-  }
-}
-
-  

@@ -5,7 +5,7 @@ import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'; //
 
 const Footer = () => {
   return (
-    <footer>
+    <div class="footer">
       <h3>Sígueme en Redes Sociales</h3>
       <div className="social-icons">
         <a href="https://www.facebook.com/tu-pagina-de-facebook" target="_blank" rel="noopener noreferrer">
@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="copyright">
         <p>&copy; 2023 Tu Sitio Web. Todos los derechos reservados.</p>
       </div>
-    </footer>
+    </div>
   );
 };
 

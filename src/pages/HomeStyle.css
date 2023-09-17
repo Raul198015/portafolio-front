@@ -1,4 +1,6 @@
-/* Estilos base */
+
+
+
 #root {
   width: 100%;
   overflow: hidden;
@@ -42,31 +44,13 @@
   height: 100%;
 }
 
-/* Define la animación meteoritoMove */
+
 @keyframes meteoritoMove {
   0% {
-    left: -100px; /* Comienza fuera del borde izquierdo */
+    left: -100px; 
   }
   100% {
-    left: 85%; /* Termina fuera del borde derecho */
+    left: 85%;
   }
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-  .center-text h1 {
-    font-size: 100px; /* Reduce el tamaño de fuente en pantallas pequeñas */
-  }
-
-  .awesome-title {
-    text-shadow: 3px 3px yellow, 6px 6px pink, 9px 9px blue, 12px 12px black, 15px 15px green; /* Reduce el desplazamiento de sombra en pantallas pequeñas */
-  }
-
-  .img-container {
-    width: 150px; /* Reduce el tamaño del contenedor de imagen en pantallas pequeñas */
-    height: 100px; /* Reduce el tamaño del contenedor de imagen en pantallas pequeñas */
-    left: 5px; /* Cambia la posición inicial en pantallas pequeñas */
-  }
-  
 }
 

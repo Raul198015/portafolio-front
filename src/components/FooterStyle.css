@@ -1,40 +1,40 @@
-footer {
-    background-image: url('../components/noche3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff; 
-    padding: 20px;
-    text-align: center;
-    width: 97.5%;
-    margin-top:25px;
-    border: 5px solid yellow;
+.footer {
+  background-color:transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff; 
+  padding: 20px;
+  text-align: center;
+  width: 97.5%;
+  margin-top:25px;
+  border: 5px solid yellow;
+  box-shadow: 30px 0 30px 30px blue;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: yellow; 
+  font-size: 24px;
+  margin-right: 20px; 
+  text-decoration: none;
+}
+
+.social-icons a:last-child {
+  margin-right: 0; 
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 0px; /* Reduce el espacio de relleno en pantallas pequeñas */
   }
-  
+
   .social-icons {
-    margin-top: 10px;
+    margin-top: 5px; /* Reduce el margen superior para un mejor ajuste en pantallas pequeñas */
   }
-  
+
   .social-icons a {
-    color: yellow; 
-    font-size: 24px;
-    margin-right: 20px; 
-    text-decoration: none;
+    font-size: 20px; /* Reduce el tamaño de fuente en pantallas pequeñas */
   }
-  
-  .social-icons a:last-child {
-    margin-right: 0; 
-  }
-  @media (max-width: 768px) {
-    footer {
-      padding: 10px; /* Reduce el espacio de relleno en pantallas pequeñas */
-    }
-  
-    .social-icons {
-      margin-top: 5px; /* Reduce el margen superior para un mejor ajuste en pantallas pequeñas */
-    }
-  
-    .social-icons a {
-      font-size: 20px; /* Reduce el tamaño de fuente en pantallas pequeñas */
-    }
-  }
-  
+}

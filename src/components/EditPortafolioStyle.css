@@ -1,15 +1,21 @@
-body{
-  background-image: url('../components/noche3.jpg');
-}
+
 .contenedoredit {
   display: flex;
   flex-direction: column;
-  height: 65vh;
-  padding: 20px;
-  margin:  50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   border: 5px solid yellow;
-  border-radius: 50px;
+  border-radius: 25px;
   color: yellow;
+  font-size: 20px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left:25%;
+  margin-right:25%;
+  box-shadow: 0 0 20px 30px blue;
+   
+  
    }
   
   
@@ -25,8 +31,8 @@ body{
     
       margin: 5px 5px;
       display: flex;
-      flex-direction: column; /* Alinea los elementos verticalmente */
-      align-items: center; /* Centra horizontalmente los elementos en el div */
+      flex-direction: column; 
+      align-items: center;
       text-align: center;
     }
     
@@ -44,11 +50,12 @@ body{
   
   
   .contenedoredit input {
-    text-align: center;
-    width: 70%;
-    padding: 10px;
-    border: 5px solid yellow;
-    border-radius: 5px;
+    width: 200%; 
+  padding: 30.5px;
+  border: 5px solid yellow;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
   }
   
   

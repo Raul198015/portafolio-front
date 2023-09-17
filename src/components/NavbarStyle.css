@@ -1,6 +1,6 @@
 /* Estilos base */
 .navbar {
-  background-image: url('../components/noche3.jpg');
+  background-color:transparent;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -13,6 +13,7 @@
   right: 0;
   text-align: center;
   border: solid 5px yellow;
+  box-shadow: 0 0 30px 30px blue;
 }
 
 .logo img {

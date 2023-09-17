@@ -1,93 +1,45 @@
+
 .basic-info-container {
-    text-align: center;
-    margin: 10%;
-    padding: 20px;
-    background-image: url('../components/noche3.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: fixed; 
-    border: 5px solid yellow;
-    border-radius: 25px;
-    
-  }
-  .basic-info-container h1 {
-    color:red;
-    font-family: cursive;
-  }
+  text-align: center;
+  margin: 10%;
+  padding: 20px;
+  background-color:black;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: fixed; 
+  border: 5px solid yellow;
+  border-radius: 25px;
+  box-shadow:  0 0 30px 30px white;
+  background-color: transparent;
   
-  .basic-info-container p {
-    font-size: 22px;
-    color:yellow;
-    margin: 10px 0;
-    font-family: cursive;
-    font-weight: bold;
+}
+.basic-info-container h1 {
+  color:red;
+  font-family: cursive;
+}
+
+.basic-info-container p {
+  font-size: 22px;
+  color:yellow;
+  margin: 10px 0;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.basic-info-container a {
+  color: red;
+  font-family: cursive;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.basic-info-container a:hover {
+  color: red;
+}
 
 
-  }
-  
-  .basic-info-container a {
-    color: red;
-    font-family: cursive;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
 
-  .basic-info-container a:hover {
-    color: red;
-  }
-  
-  .basic-info-container {
-    text-align: center;
-    margin: 10%;
-    padding: 20px;
-    background-image: url('../components/noche3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    border: 5px solid yellow;
-    border-radius: 25px;
-    font-family: cursive;
-  }
-  
-  .basic-info-container h1 {
-    color: red;
-  }
-  
-  .basic-info-container p {
-    font-size: 22px;
-    color: yellow;
-    margin: 10px 0;
-    font-weight: bold;
-  }
-  
-  .basic-info-container a {
-    color: red;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .basic-info-container a:hover {
-    color: red;
-  }
-  
-  /* Media query para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .basic-info-container {
-      margin: 5%;
-      padding: 10px;
-    }
-  
-    .basic-info-container h1 {
-      font-size: 24px;
-    }
-  
-    .basic-info-container p {
-      font-size: 18px;
-      margin: 8px 0;
-    }
-  }
-  
- 
-  
-  
- 
+
+
+
+

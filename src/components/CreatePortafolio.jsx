@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
 import "./CreatePortafolioStyle.css";
 
 const url = "http://localhost:8080/api/portafolio";
@@ -10,7 +9,7 @@ const CreatePortafolio = () => {
   const [nombre, setNombre] = useState("");
   const [descripcion, setDescripcion] = useState("");
   const [urlrepo, setUrlrepo] = useState("");
-  const [lenguaje, setLenguaje] = useState("");
+  const [lenguajes, setLenguajes] = useState("");
   const [imagen, setImagen] = useState("");
   const navigate = useNavigate();
 
@@ -18,15 +17,18 @@ const CreatePortafolio = () => {
     e.preventDefault();
     try {
       await axios.post(url, {
-        nombre: nombre,
-        descripcion: descripcion,
-        urlrepo: urlrepo,
-        lenguaje: lenguaje,
-        imagen: imagen,
+        nombre,
+        descripcion,
+        urlrepo,
+        lenguajes,
+        imagen,
       });
       navigate("/");
     } catch (error) {
-      console.error("Error al crear portafolio:", error);
+      console.error("Error al crear:", error);
+
+
+      
     }
   };
 
@@ -48,23 +50,21 @@ const CreatePortafolio = () => {
           <input type="text" value={urlrepo} onChange={(e) => setUrlrepo(e.target.value)} />
         </div>
         <div className="input-container">
-          <label>Lenguaje</label>
-          <input type="text" value={lenguaje} onChange={(e) => setLenguaje(e.target.value)} />
+          <label>Lenguajes</label>
+          <input type="text" value={lenguajes} onChange={(e) => setLenguajes(e.target.value)} />
         </div>
         <div className="input-container">
           <label>Imagen</label>
-          <input type="text" value={imagen} onChange={(e) => setImagen(e.target.value)} />
+          <input type="file"  onChange={(e) => setImagen(e.target.files[0])} />
         </div>
 
         <button type="submit">Crear repositorio</button>
       </form>
 
-      
       <button onClick={() => navigate("/")}>Volver a Home</button>
-      
-      
     </div>
   );
 };
 
 export default CreatePortafolio;
+

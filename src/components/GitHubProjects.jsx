@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import "./GitHubProjectsStyle.css"
+import "./gitHubProjectsStyle.css";
+
 
 
 const GitHubProjects = () => {
@@ -18,19 +19,21 @@ const GitHubProjects = () => {
   }, []);
 
   return (
-    <div>
+    <div className="projectscontainer">
 
       <div className="projects">
       <h1>Mis Proyectos de GitHub</h1>
+      
       <ul>
-        {projects.map(project => (
-          <li key={project.id}>
-            <a href={project.html_url} target="_blank" rel="noopener noreferrer" >
-              {project.name}
-            </a>
-          </li>
-        ))}
+         {projects.map(project => (
+         <li key={project.id}>
+         <a href={project.html_url} target="_blank" rel="noopener noreferrer" >
+         {project.name}
+         </a>
+         </li>
+         ))}
       </ul>
+
       </div>
     </div>
   );

@@ -35,7 +35,7 @@ const Contacto = () => {
   };
 
   return (
-    <div className="contacto-background"> {/* Agrega un div para el fondo */}
+    <div className="contacto-background"> 
       <div className="contacto-container">
         <h2>Contacto</h2>
         <form onSubmit={handleSubmit}>
@@ -71,11 +71,13 @@ const Contacto = () => {
               required
             />
           </div>
-          <button type="submit">Enviar mensaje</button>
+          
+          <button className="btnem" type="submit">Enviar mensaje</button>
         </form>
-        <button onClick={() => navigate("/")}>Volver a Home</button>
+        <button className="btnen" onClick={() => navigate("/")}>Volver a Home</button>
       </div>
-    </div>
+      </div>
+    
   );
 };
 
