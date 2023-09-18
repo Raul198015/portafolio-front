@@ -5,7 +5,7 @@
   justify-content: center;
   text-align: center;
   width: 100%;
-  }
+}
 
 .card {
   display: flex;
@@ -20,16 +20,24 @@
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 0 20px 30px blue;
-  padding: 5%; 
+  padding: 5%;
 }
 
 .card h2 {
   background-color: red;
   border: solid yellow 5px;
   border-radius: 10px;
-  color:white;
+  color: white;
   width: 40%;
-  
+}
+
+.imgcontenedor {
+  width: 100%;
+  max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor */
+}
+.card img {
+  width: 400px; /* Establece un ancho fijo para todas las imágenes */
+  height: 200px; /* Establece una altura fija para todas las imágenes */
 }
 
 .card h3 {
@@ -41,6 +49,11 @@
   width: 40%;
 }
 
+.card img {
+  max-width: 100%; /* Asegura que la imagen no sea más ancha que la tarjeta */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
 .card p {
   width: 110%;
   background-color: white;
@@ -50,7 +63,6 @@
   text-align: center;
   font-size: 15px;
   font-weight: bold;
-  
 }
 
 .card button {
@@ -90,4 +102,3 @@
   color: red;
   border-color: red;
 }
-

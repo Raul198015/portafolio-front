@@ -15,13 +15,13 @@ const CreatePortafolio = () => {
 
   const store = async (e) => {
     e.preventDefault();
-    // Crear FormData para manejar la subida de archivos
+    
     const formData = new FormData();
     formData.append("nombre", nombre);
     formData.append("descripcion", descripcion);
     formData.append("urlrepo", urlrepo);
     formData.append("lenguajes", lenguajes);
-    formData.append("imagen", imagen);  // Asegúrate de que 'imagen' es el nombre esperado en el servidor
+    formData.append("imagen", imagen);  
     try {
       await axios.post(url, formData, {
         headers: {
@@ -33,8 +33,7 @@ const CreatePortafolio = () => {
       console.error("Error al crear:", error);
     }
   };
-  
-  return (
+    return (
     <div className="contenedorportafolio">
       <h2>Crear un elemento</h2>
 
@@ -58,7 +57,10 @@ const CreatePortafolio = () => {
         <div className="input-container">
           <label>Imagen</label>
           <input type="file"  onChange={(e) => setImagen(e.target.files[0])} />
+          
+        
         </div>
+        
 
         <button type="submit">Crear repositorio</button>
       </form>

@@ -10,8 +10,8 @@ const EditPortafolio = () => {
   const [descripcion, setDescripcion] = useState("");
   const [urlrepo, setUrlrepo] = useState("");
   const [lenguajes, setLenguajes] = useState("");
-  const [imagen, setImagen] = useState(null); // Para la nueva imagen
-  const [imagenUrl, setImagenUrl] = useState(""); // Para la URL de la imagen existente
+  const [imagen, setImagen] = useState(null); 
+  const [imagenUrl, setImagenUrl] = useState(""); 
   const navigate = useNavigate();
 
   const { id } = useParams();
@@ -19,15 +19,15 @@ const EditPortafolio = () => {
   const update = async (e) => {
     e.preventDefault();
     try {
-      // Crear FormData para manejar la subida de archivos
+      
       const formData = new FormData();
       formData.append("nombre", nombre);
       formData.append("descripcion", descripcion);
       formData.append("urlrepo", urlrepo);
       formData.append("lenguajes", lenguajes);
-      formData.append("imagen", imagen); // Nueva imagen, si se selecciona
+      formData.append("imagen", imagen); 
       
-      // Realizar la actualización enviando los datos al servidor
+      
       await axios.put(`${url}/${id}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
@@ -47,7 +47,7 @@ const EditPortafolio = () => {
         setDescripcion(response.data.descripcion);
         setUrlrepo(response.data.urlrepo);
         setLenguajes(response.data.lenguajes);
-        setImagenUrl(response.data.imagenUrl); // Establecer la URL de la imagen existente
+        setImagenUrl(response.data.imagenUrl); 
       } catch (error) {
         console.error("Error al obtener los datos:", error);
       }
@@ -76,10 +76,6 @@ const EditPortafolio = () => {
         <div className="input-container">
           <label>Lenguajes</label>
           <input type="text" value={lenguajes} onChange={(e) => setLenguajes(e.target.value)} />
-        </div>
-        <div>
-          <label>Imagen Actual</label>
-          {imagenUrl && <img src={imagenUrl} alt="Imagen Actual" />}
         </div>
         <div>
           <label>Subir Nueva Imagen</label>

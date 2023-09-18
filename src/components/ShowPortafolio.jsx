@@ -39,7 +39,10 @@ const ShowCharacters = () => {
                     <h3>Lenguajes</h3>
                     <p>{character.lenguajes}</p>
                     <h3>Imagen</h3>
-                    <p>{character.imagen}</p>
+                    <div className="imgcontenedor">
+                    {character.imagen && <img src={character.imagen}  />}
+                    </div>
+
                     <div className="button-container">
                     <NavLink to={`/edit/${character.id}`}className="edit-button"><button>editar</button></NavLink>
                     </div>
