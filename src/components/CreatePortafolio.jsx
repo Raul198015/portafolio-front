@@ -15,23 +15,25 @@ const CreatePortafolio = () => {
 
   const store = async (e) => {
     e.preventDefault();
+    // Crear FormData para manejar la subida de archivos
+    const formData = new FormData();
+    formData.append("nombre", nombre);
+    formData.append("descripcion", descripcion);
+    formData.append("urlrepo", urlrepo);
+    formData.append("lenguajes", lenguajes);
+    formData.append("imagen", imagen);  // Asegúrate de que 'imagen' es el nombre esperado en el servidor
     try {
-      await axios.post(url, {
-        nombre,
-        descripcion,
-        urlrepo,
-        lenguajes,
-        imagen,
+      await axios.post(url, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
       });
       navigate("/");
     } catch (error) {
       console.error("Error al crear:", error);
-
-
-      
     }
   };
-
+  
   return (
     <div className="contenedorportafolio">
       <h2>Crear un elemento</h2>
