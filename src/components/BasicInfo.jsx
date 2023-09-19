@@ -1,28 +1,27 @@
 import React from 'react';
 import './BasicInfoStyle.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEnvelope, faPhone, faFilePdf, faLocationDot} from '@fortawesome/free-solid-svg-icons';
+import { faUser, faEnvelope, faPhone, faFilePdf, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import AnalogClock from './DigitalClock';
-import { faGithub, faLinkedin,} from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 const BasicInfo = () => {
+  const enlaceGoogleMaps = `https://www.google.com/maps?q=Barcelona+08020`;
+
   return (
-    
-    
-      <div className="basic-info-container">
-        
+    <div className="basic-info-container">
       <section>
         <h1>Datos de Contacto</h1>
         <AnalogClock />
-        <p><FontAwesomeIcon icon={faUser} /> Nombre: Raul Labajos Oca</p>      
-        <p><FontAwesomeIcon icon={faLocationDot} /> Direccion: Barcelona 08020 (España)</p>
+        <p><FontAwesomeIcon icon={faUser} /> Nombre: Raul Labajos Oca</p>
+        <p><FontAwesomeIcon icon={faLocationDot} /> Dirección: <a href={enlaceGoogleMaps} target="_blank" rel="noopener noreferrer">Barcelona 08020 (España)</a></p>
         <p><FontAwesomeIcon icon={faEnvelope} /> Correo Electrónico:{' '}
           <a href="mailto:raru69@hotmail.com">raru69@hotmail.com</a></p>
-          <p><FontAwesomeIcon icon={faPhone} /> Teléfono: 637125344</p>
-          <p><FontAwesomeIcon icon={faGithub} /> GitHub:{' '}<a href="https://github.com/Raul198015" target="_blank" rel="noopener noreferrer">Mi usuario</a></p>
-          <p><FontAwesomeIcon icon={faLinkedin} /> LinkedIn:{' '}<a href="https://www.linkedin.com/in/raul-labajos-oca" target="_blank" rel="noopener noreferrer">Mi Perfil</a></p>
-          <p><FontAwesomeIcon icon={faFilePdf} /> Currículum:{' '}<a href="./src/components/CurriculumFullStack1.0.pdf" download>Descarga Mi Currículum</a></p>
+        <p><FontAwesomeIcon icon={faPhone} /> Teléfono: 637125344</p>
+        <p><FontAwesomeIcon icon={faGithub} /> GitHub:{' '}<a href="https://github.com/Raul198015" target="_blank" rel="noopener noreferrer">Mi usuario</a></p>
+        <p><FontAwesomeIcon icon={faLinkedin} /> LinkedIn:{' '}<a href="https://www.linkedin.com/in/raul-labajos-oca" target="_blank" rel="noopener noreferrer">Mi Perfil</a></p>
+        <p><FontAwesomeIcon icon={faFilePdf} /> Currículum:{' '}<a href="./src/components/CurriculumFullStack1.0.pdf" download>Descarga Mi Currículum</a></p>
       </section>
-      
       <section>
         <h1>Sobre Mi</h1>
         <p>
@@ -52,4 +51,5 @@ const BasicInfo = () => {
 };
 
 export default BasicInfo;
+
 
