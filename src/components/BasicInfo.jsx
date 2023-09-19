@@ -36,15 +36,15 @@ const BasicInfo = () => {
       </section>
       <section>
         <h1>Aficiones y Pasatiempos</h1>
-        <p>Deportes, Viajes, etc.</p>
+        <p>Deportes, Viajes, Videojuegos. </p>
       </section>
       <section>
         <h1>Lenguajes y Tecnologías</h1>
-        <p>JavaScript, React, HTML, CSS, etc.</p>
+        <p>JavaScript, React, HTML, CSS.</p>
       </section>
       <section>
         <h1>Soft Skills</h1>
-        <p>Comunicación, Trabajo en equipo, Resolución de problemas, etc.</p>
+        <p>Comunicación, Trabajo en equipo, Resolución de problemas.</p>
       </section>
     </div>
   );
