@@ -18,8 +18,8 @@ const BasicInfo = () => {
         <p><FontAwesomeIcon icon={faEnvelope} beat /> Correo Electrónico:{' '}
           <a href="mailto:raru69@hotmail.com">raru69@hotmail.com</a></p>
         <p><FontAwesomeIcon icon={faPhone} beat /> Teléfono: 637125344</p>
-        <p><FontAwesomeIcon icon={faGithub} beat /> GitHub:{' '}<a href="https://github.com/Raul198015" target="_blank" rel="noopener noreferrer">Mi usuario</a></p>
-        <p><FontAwesomeIcon icon={faLinkedin} beat /> LinkedIn:{' '}<a href="https://www.linkedin.com/in/raul-labajos-oca" target="_blank" rel="noopener noreferrer">Mi Perfil</a></p>
+        <p><FontAwesomeIcon icon={faGithub} beat /> GitHub:{' '}<a href="https://github.com/Raul198015" target="_blank" rel="noopener noreferrer">Raul198015</a></p>
+        <p><FontAwesomeIcon icon={faLinkedin} beat /> LinkedIn:{' '}<a href="https://www.linkedin.com/in/raul-labajos-oca" target="_blank" rel="noopener noreferrer">raul-labajos-oca</a></p>
         <p><FontAwesomeIcon icon={faFilePdf} beat /> Currículum:{' '}<a href="./src/components/CurriculumFullStack1.0.pdf" download>Descarga Mi Currículum</a></p>
       </section>
       <section>
