@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 10%;
+  
   background-color:transparent;
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,6 +41,10 @@
   margin-top: 20px; 
 }
 
+.footer{
+  flex-direction: flex;
 
+
+}
   
   

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./gitHubProjectsStyle.css";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
 
 
 
@@ -20,11 +23,10 @@ const GitHubProjects = () => {
 
   return (
     <div className="projectscontainer">
-
+      <Navbar />
       <div className="projects">
       <h1>Mis Proyectos de GitHub</h1>
-      
-      <ul>
+         <ul>
          {projects.map(project => (
          <li key={project.id}>
          <a href={project.html_url} target="_blank" rel="noopener noreferrer" >
@@ -33,8 +35,12 @@ const GitHubProjects = () => {
          </li>
          ))}
       </ul>
-
       </div>
+      <div className='footer1'>
+        <Footer />
+      </div>
+            
+      
     </div>
   );
 };

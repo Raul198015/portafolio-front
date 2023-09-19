@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom"; // Importa useNavigate desde react-router-dom
+import { useNavigate } from "react-router-dom"; 
 import "./ContactoStyle.css";
+
 
 
 const Contacto = () => {
@@ -11,7 +12,7 @@ const Contacto = () => {
     mensaje: "",
   });
 
-  const navigate = useNavigate(); // Inicializa useNavigate
+  const navigate = useNavigate(); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,7 +23,7 @@ const Contacto = () => {
     e.preventDefault();
 
     try {
-      await axios.post("/api/contacto", formData); // Envia los datos del formulario al backend
+      await axios.post("/api/contacto", formData); 
       alert("Mensaje enviado con éxito");
       setFormData({
         nombre: "",
@@ -35,7 +36,8 @@ const Contacto = () => {
   };
 
   return (
-    <div className="contacto-background"> 
+    <div className="contacto-background">
+      
       <div className="contacto-container">
         <h2>Contacto</h2>
         <form onSubmit={handleSubmit}>
@@ -74,8 +76,10 @@ const Contacto = () => {
           
           <button className="btnem" type="submit">Enviar mensaje</button>
         </form>
-        <button className="btnen" onClick={() => navigate("/")}>Volver a Home</button>
+                <button className="btnen" onClick={() => navigate("/")}>Volver a Home</button>
+      
       </div>
+      
       </div>
     
   );

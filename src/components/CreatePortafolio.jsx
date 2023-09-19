@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./CreatePortafolioStyle.css";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 const url = "http://localhost:8080/api/portafolio";
 
@@ -33,11 +35,13 @@ const CreatePortafolio = () => {
       console.error("Error al crear:", error);
     }
   };
+  
     return (
+    <div class name="create">
+      <Navbar />
     <div className="contenedorportafolio">
-      <h2>Crear un elemento</h2>
-
-      <form onSubmit={store}>
+        <h2>Crear un elemento</h2>
+        <form onSubmit={store}>
         <div className="input-container">
           <label>Nombre</label>
           <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
@@ -66,7 +70,12 @@ const CreatePortafolio = () => {
       </form>
 
       <button onClick={() => navigate("/")}>Volver a Home</button>
+      
+</div>
+<Footer />
     </div>
+    
+    
   );
 };
 

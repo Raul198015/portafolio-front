@@ -1,16 +1,20 @@
 import React from 'react';
 import './BasicInfoStyle.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEnvelope, faPhone, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faEnvelope, faPhone, faFilePdf, faLocationDot} from '@fortawesome/free-solid-svg-icons';
+import AnalogClock from './DigitalClock';
 import { faGithub, faLinkedin,} from '@fortawesome/free-brands-svg-icons';
 const BasicInfo = () => {
   return (
     
     
       <div className="basic-info-container">
+        
       <section>
         <h1>Datos de Contacto</h1>
+        <AnalogClock />
         <p><FontAwesomeIcon icon={faUser} /> Nombre: Raul Labajos Oca</p>      
+        <p><FontAwesomeIcon icon={faLocationDot} /> Direccion: Barcelona 08020 (España)</p>
         <p><FontAwesomeIcon icon={faEnvelope} /> Correo Electrónico:{' '}
           <a href="mailto:raru69@hotmail.com">raru69@hotmail.com</a></p>
           <p><FontAwesomeIcon icon={faPhone} /> Teléfono: 637125344</p>

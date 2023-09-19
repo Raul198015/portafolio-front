@@ -5,20 +5,12 @@
   background-image: url('../components/noche1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Cambiar a 'fixed' para mantener el fondo fijo */
-}
-
-.center-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 20px;
+  background-attachment: fixed; 
 }
 
 .center-text h1 {
-  font-size: 100px; /* Ajustar el tamaño de fuente para pantallas de teléfono */
-  margin-top: 10%;
+  font-size: 65px;
+  margin-top: 25px; 
   color: red;
 }
 
@@ -29,11 +21,11 @@
 
 .img-container {
   position: absolute;
-  width: 150px; /* Ajustar el tamaño de la imagen para pantallas de teléfono */
-  height: 90px; /* Ajustar el tamaño de la imagen para pantallas de teléfono */
-  top: 50%;
+  width: 150px; 
+  height: 90px; 
+  top: 70%;
   left: 10px;
-  animation: meteoritoMove 4s linear infinite;
+  animation: meteoritoMove 5s linear infinite;
 }
 
 .img-container img {
@@ -41,31 +33,30 @@
   height: 100%;
 }
 
-/* Ajustar la animación para pantallas de teléfono */
+
 @keyframes meteoritoMove {
-  0% {
-    left: -50px; /* Reducir el valor para pantallas de teléfono */
+  20% {
+    left: -50px; 
   }
   100% {
     left: 85%;
   }
 }
 
-/* Estilos para pantallas pequeñas (menor o igual a 768px) */
 @media (max-width: 768px) {
   .center-text h1 {
-    font-size: 15px; /* Reducir el tamaño de fuente para pantallas de teléfono */
+    font-size: 25px;
+    margin-top: 25px;; 
   }
 
   .img-container {
-    width: 100px; /* Reducir el tamaño de la imagen para pantallas de teléfono */
-    height: 60px; /* Reducir el tamaño de la imagen para pantallas de teléfono */
+    width: 100px; 
+    height: 60px; 
   }
-
-  /* Ajustar la animación para pantallas de teléfono */
+  
   @keyframes meteoritoMove {
-    0% {
-      left: -30px; /* Reducir el valor para pantallas de teléfono */
+    20% {
+      left: -30px;
     }
     100% {
       left: 65%;

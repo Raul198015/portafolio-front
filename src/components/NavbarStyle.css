@@ -38,57 +38,54 @@
   font-weight: bold;
 }
 
-/* Estilos para pantallas pequeñas */
+
 @media (max-width: 768px) {
-  .navbar {
+    .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 1px; /* Aumenta el espacio para los iconos en la barra de navegación */
+    padding: 10px;
   }
 
-      
-     /* Alinea los enlaces a la izquierda */
-  
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; 
+  }
 
   .nav-links a {
     font-size: 1.2rem;
-    padding: 5px ; /* Agrega espacio alrededor de los enlaces */
+    padding: 5px 0; 
   }
 
-  /* Ajustar el espacio entre el logo y los enlaces */
-  .logo {
-    margin-bottom: 10px; /* Aumenta el espacio debajo del logo */
+    .logo {
+    margin-bottom: 10px;
   }
-
-  /* Agregar un ícono o texto para el menú desplegable en pantallas pequeñas */
+  
   .menu-toggle {
     display: block;
     font-size: 1.5rem;
     cursor: pointer;
   }
-
-  /* Ocultar enlaces en pantallas pequeñas por defecto */
+  
   .nav-links {
     display: none;
     position: absolute;
     right: 0;
-    top: 70px; /* Ajusta la posición vertical para evitar superposición con el botón de menú */
-    background-color: transparent; /* Evita que los enlaces sean transparentes */
+    top: 70px;
+    background-color: transparent;
     border: solid 5px yellow;
     border-radius: 10px;
     padding: 10px;
   }
-
-  /* Mostrar enlaces cuando se hace clic en el menú desplegable */
+  
   .show-nav .nav-links {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  /* Cambiar el icono del menú desplegable cuando está abierto */
   .show-nav .menu-toggle::before {
-    content: '\f00d'; /* Puedes reemplazar esto con el ícono que prefieras */
+    content: '\f00d'; 
     font-family: FontAwesome;
   }
 }

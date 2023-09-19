@@ -1,8 +1,8 @@
 
 .basic-info-container {
   text-align: center;
-  margin: 10%;
-  padding: 20px;
+  margin: 5%;
+  padding: 10px;
   background-color:black;
   background-size: cover; 
   background-repeat: no-repeat; 
@@ -37,6 +37,12 @@
   color: red;
 }
 
+.basic-info-container .clock {
+  color:red !important;
+  margin: 20px ;
+  
+ 
+}
 
 
 

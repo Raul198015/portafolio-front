@@ -4,8 +4,8 @@ import ShowPortafolio from "../components/ShowPortafolio.jsx";
 import CreatePortafolio from "../components/CreatePortafolio.jsx";
 import EditPortafolio from "../components/EditPortafolio.jsx";
 import DeletePortafolio from "../components/DeletePortafolio.jsx";
-import Projects from "../pages/Projects.jsx";
 import Contacto from "../components/Contacto.jsx";
+import GitHubProjects from "../components/GitHubProjects.jsx";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -35,11 +35,11 @@ export const router = createBrowserRouter([
         path: "/delete/:id",
         element: <DeletePortafolio/>
     },
-    
     {
-        path: "/projects",
-        element: <Projects/>
+        path: "/githubprojects",
+        element: <GitHubProjects/>
     },
+
     {
         path: "/creados",
         element: <ShowPortafolio/>
