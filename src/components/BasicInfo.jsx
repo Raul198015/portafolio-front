@@ -13,14 +13,14 @@ const BasicInfo = () => {
       <section>
         <h1>Datos de Contacto</h1>
         <AnalogClock />
-        <p><FontAwesomeIcon icon={faUser} /> Nombre: Raul Labajos Oca</p>
-        <p><FontAwesomeIcon icon={faLocationDot} /> Dirección: <a href={enlaceGoogleMaps} target="_blank" rel="noopener noreferrer">Barcelona 08020 (España)</a></p>
-        <p><FontAwesomeIcon icon={faEnvelope} /> Correo Electrónico:{' '}
+        <p><FontAwesomeIcon icon={faUser} beat /> Nombre: Raul Labajos Oca</p>
+        <p><FontAwesomeIcon icon={faLocationDot} beat /> Dirección: <a href={enlaceGoogleMaps} target="_blank" rel="noopener noreferrer">Barcelona 08020 (España)</a></p>
+        <p><FontAwesomeIcon icon={faEnvelope} beat /> Correo Electrónico:{' '}
           <a href="mailto:raru69@hotmail.com">raru69@hotmail.com</a></p>
-        <p><FontAwesomeIcon icon={faPhone} /> Teléfono: 637125344</p>
-        <p><FontAwesomeIcon icon={faGithub} /> GitHub:{' '}<a href="https://github.com/Raul198015" target="_blank" rel="noopener noreferrer">Mi usuario</a></p>
-        <p><FontAwesomeIcon icon={faLinkedin} /> LinkedIn:{' '}<a href="https://www.linkedin.com/in/raul-labajos-oca" target="_blank" rel="noopener noreferrer">Mi Perfil</a></p>
-        <p><FontAwesomeIcon icon={faFilePdf} /> Currículum:{' '}<a href="./src/components/CurriculumFullStack1.0.pdf" download>Descarga Mi Currículum</a></p>
+        <p><FontAwesomeIcon icon={faPhone} beat /> Teléfono: 637125344</p>
+        <p><FontAwesomeIcon icon={faGithub} beat /> GitHub:{' '}<a href="https://github.com/Raul198015" target="_blank" rel="noopener noreferrer">Mi usuario</a></p>
+        <p><FontAwesomeIcon icon={faLinkedin} beat /> LinkedIn:{' '}<a href="https://www.linkedin.com/in/raul-labajos-oca" target="_blank" rel="noopener noreferrer">Mi Perfil</a></p>
+        <p><FontAwesomeIcon icon={faFilePdf} beat /> Currículum:{' '}<a href="./src/components/CurriculumFullStack1.0.pdf" download>Descarga Mi Currículum</a></p>
       </section>
       <section>
         <h1>Sobre Mi</h1>
